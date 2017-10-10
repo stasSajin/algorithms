@@ -16,7 +16,6 @@ def get_fibonacci_huge(n, m):
         previous, current = current, (previous + current) % m
         f_modulo.append(current)
         if previous == 0 and current == 1:
-            cycle_len = cycle_len
             new_n = n % cycle_len
             return f_modulo[new_n]
     # if the n of fibonacy_modulo is smaller than the cycle, return f[n]
